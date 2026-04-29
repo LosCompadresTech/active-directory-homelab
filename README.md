@@ -47,7 +47,7 @@ I created two virtual machines in VMware to simulate a small business environmen
 
 ## Step 2: Static IP Configuration
 
-I configured a static IP address on DC01 to ensure reliable communication for domain services and DNS.
+I configured DC01 with a static IP address so client machines can consistently locate the domain controller. I also set DC01 to use itself as the preferred DNS server because it will provide DNS services for the Active Directory domain.
 
 ![Static IP](screenshots/02-dc01-static-ip.png)
 
