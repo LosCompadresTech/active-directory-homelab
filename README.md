@@ -123,7 +123,8 @@ I created domain users and groups and assigned group memberships to simulate acc
 ![Sales Users](screenshots/07b-sales-users.png)
 ![HR Users](screenshots/07c-hr-users.png)
 
-![Groups](screenshots/08-domain-groups-created.png)
+![IT Groups](screenshots/08a-it-groups.png)
+![Sales Groups](screenshots/08b-sales-groups.png)
 
 ---
 
