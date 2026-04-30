@@ -171,7 +171,13 @@ This setup simulates how businesses automatically manage IP address assignments 
 
 ## Step 10: Domain Join
 
-I joined CLIENT01 to the domain and verified successful connection to the domain controller.
+On CLIENT01, I configured the DNS settings to point to the Domain Controller (192.168.29.128) to ensure proper communication with the domain.
+
+I then joined the computer to the homelab.local domain using domain administrator credentials. After restarting the system, the domain join was successful. This was verified by confirming the full device name as client01.homelab.local in system settings.
+
+After joining the domain, I logged into CLIENT01 using a domain user account (homelab\welly) to verify authentication through Active Directory. I confirmed the login by running the whoami command, which showed the domain user, proving that authentication is being handled by the Domain Controller.
+
+This step demonstrates how a client machine can join a domain and allow users to log in using centralized credentials, which is standard in real business environments.
 
 ![Client Joined](screenshots/18-client-joined-domain.png)
 
