@@ -149,7 +149,7 @@ These settings help simulate real world business security practices by preventin
 
 ## Step 8: DNS Configuration
 
-I verified DNS configuration and tested name resolution using command-line tools.
+I verified that DNS was installed and configured with the homelab.local forward lookup zone. I tested name resolution using nslookup and ping to confirm that the domain could be resolved successfully.
 
 ![DNS](screenshots/12-dns-zone.png)
 
