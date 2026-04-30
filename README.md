@@ -51,6 +51,42 @@ I configured DC01 with a static IP address so client machines can consistently l
 
 ![Static IP](screenshots/02-dc01-static-ip.png)
 
+🔧 DNS Troubleshooting – No Internet After Static IP
+
+After configuring a static IP address on the domain controller (DC01), I encountered an issue where the server was unable to access the internet.
+
+To troubleshoot, I ran the following test:
+
+ping 8.8.8.8
+
+This returned successful replies, confirming that basic network connectivity and routing were working correctly.
+
+However, when testing DNS resolution:
+
+ping google.com
+
+I received the error:
+
+Ping request could not find host google.com
+
+This indicated a DNS resolution issue rather than a network connectivity problem.
+
+🧠 Root Cause
+
+The domain controller was configured to use its own IP address (192.168.1.10) as the DNS server, but the DNS service was not yet fully configured to resolve external domain names.
+
+🔧 Resolution Steps
+
+Temporarily changed the DNS server to a public DNS:
+
+8.8.8.8
+
+This immediately restored internet access and confirmed the issue was DNS-related.
+
+Reconfigured the DNS back to the domain controller:
+
+192.168.29.128
+After reapplying the configuration, DNS resolution began working correctly.
 ---
 
 ## Step 3: Installing Active Directory Domain Services
