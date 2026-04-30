@@ -87,7 +87,6 @@ Reconfigured the DNS back to the domain controller:
 
 192.168.29.128
 
-After reapplying the configuration, DNS resolution began working correctly.
 ---
 
 ## Step 3: Installing Active Directory Domain Services
