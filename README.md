@@ -109,7 +109,7 @@ I promoted DC01 to a domain controller and created a new Active Directory forest
 
 ## Step 5: Organizational Units
 
-I created Organizational Units to organize users, groups, and systems within the domain.
+I created Organizational Units to keep the domain organized. These OUs separate users, groups, and workstations, which makes account management and Group Policy application easier in a business environment..
 
 ![OUs](screenshots/06-organizational-units.png)
 
