@@ -93,7 +93,7 @@ After reapplying the configuration, DNS resolution began working correctly.
 
 ## Step 3: Installing Active Directory Domain Services
 
-I installed the Active Directory Domain Services role on DC01. This allows the server to manage domain users, groups, computers, authentication, and security policies in the lab environment.
+I installed the Active Directory Domain Services role on DC01 to manage domain users, computers, and policies.
 
 ![AD DS Installed](screenshots/03-ad-ds-installed.png)
 
@@ -101,7 +101,7 @@ I installed the Active Directory Domain Services role on DC01. This allows the s
 
 ## Step 4: Domain Controller Setup
 
-I promoted DC01 to a domain controller and created a new Active Directory forest named homelab.local. This allows the lab to function as a centralized domain environment where users and computers can be managed through Active Directory.
+I promoted DC01 to a domain controller and created a new forest named homelab.local, enabling centralized authentication and management.
 
 ![Domain Setup](screenshots/04-domain-controller-promotion.png)
 
@@ -109,7 +109,15 @@ I promoted DC01 to a domain controller and created a new Active Directory forest
 
 ## Step 5: Organizational Units
 
-I created Organizational Units (OUs) to keep the domain organized, including IT, Sales, HR, Workstations, and Servers. These OUs help separate users, groups, and devices, allowing for more efficient account management and targeted Group Policy application in a business environment.
+I created Organizational Units (OUs) including:
+
+IT
+Sales
+HR
+Workstations
+Servers
+
+These OUs help organize resources and allow targeted Group Policy application.
 
 ![OUs](screenshots/06-organizational-units.png)
 
