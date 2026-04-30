@@ -73,7 +73,7 @@ This indicated a DNS resolution issue rather than a network connectivity problem
 
 🧠 Root Cause
 
-The domain controller was configured to use its own IP address (192.168.1.10) as the DNS server, but the DNS service was not yet fully configured to resolve external domain names.
+The domain controller was configured to use its own IP address (192.168.29.128) as the DNS server, but the DNS service was not yet fully configured to resolve external domain names.
 
 🔧 Resolution Steps
 
