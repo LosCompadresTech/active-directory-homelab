@@ -161,7 +161,7 @@ I installed and configured the DHCP Server role on DC01 to automatically assign 
 
 A new IPv4 DHCP scope was created for the homelab network. The scope assigns client IP addresses from 192.168.1.100 to 192.168.1.200 using a 255.255.255.0 subnet mask.
 
-The DHCP options were configured with a default gateway of 192.168.1.1, DNS server of 192.168.1.10, and domain name of homelab.local.
+The DHCP options were configured with a default gateway of 192.168.1.1, DNS server of 192.168.29.2, and domain name of homelab.local.
 
 This setup simulates how businesses automatically manage IP address assignments for workstations instead of manually configuring every device.
 
